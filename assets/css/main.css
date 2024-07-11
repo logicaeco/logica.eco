@@ -1604,8 +1604,8 @@ background-color: #ffffff;
   padding-left: 10px;
 }
 
-#destellos {background: url(../img/detalle/fondo\ ofertas.jpg) right top no-repeat;
-  background-size: contain;
+#destellos {background: url(../img/detalle/fondo\ ofertas.jpg) center top no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 640px) {
