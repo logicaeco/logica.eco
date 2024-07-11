@@ -465,28 +465,31 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #F0F1E1;
   font-size: 14px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  padding-top: 0px;
   position: relative;
+  margin-top: 0px;
 }
 
 .footer .footer-newsletter {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
-  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
-  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  background-color: #CBDD3D;
+  border-top: #ffffff;
+  border-bottom: #ffffff);
   padding: 50px 0;
 }
 
 .footer .footer-newsletter h4 {
-  font-size: 24px;
+  font-size: 26px;
+  color: #ffffff;
 }
 
 .footer .footer-newsletter .newsletter-form {
   margin-top: 30px;
   padding: 6px 8px;
   position: relative;
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: #ffffff;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   box-shadow: 0px 2px 25px color-mix(in srgb, var(--default-color), transparent 95%);
   display: flex;
@@ -515,8 +518,8 @@ h6 {
   font-size: 16px;
   padding: 0 20px;
   margin: -7px -8px -7px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #9897e1;
+  color: #ffffff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
@@ -642,11 +645,11 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: #FE4504;
 }
 
 .footer .footer-about a {
-  color: var(--heading-color);
+  color: #FE4504;
   font-size: 24px;
   font-weight: 600;
   font-family: var(--heading-font);
@@ -669,6 +672,11 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+
+.footer .p  {
+font-size: 20px;
+color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -783,7 +791,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -837,9 +845,9 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #000000;
   margin: 5px 0 30px 0;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -903,15 +911,36 @@ section,
 }
 
 @media (max-width: 640px) {
+ 
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 85px 0 65px 0;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    background: url(../img/mobile/heromobile.jpg) right bottom no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+  
   .hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    margin: 0;
+    font-size: 45px;
+    padding-top: 470px;
+    font-weight: 900;
+    line-height: 48px;
   }
 
   .hero p {
+    color: #000000;
+    margin: 5px 0 30px 0;
     font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    font-weight: 700;
+    padding-top: 17px;
   }
 }
 
@@ -958,6 +987,7 @@ section,
 
 .clients {
   padding-bottom: 50px;
+  padding-top: 20px;
 } 
 
 
@@ -973,6 +1003,16 @@ section,
   background-color: #ffffff;
 } 
 
+@media (max-width: 640px) {
+.clients .section-title p {
+  margin: 10px 0 0 0;
+  font-size: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  }
+} 
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -980,7 +1020,7 @@ section,
 .about .content {
   background-color: #F0F1E1;
   padding: 40px;
-  padding-top: 80px;
+  padding-top: 35px;
 }
 
 .about .content h3 {
@@ -1080,8 +1120,28 @@ section,
   transform: translateX(5px);
 }
 
+@media (max-width: 640px) {
+  .about .titulo {
+    background-color: #F0F1E1;
+    padding: 20px;
+    padding-top: 20px;
+  }
+ 
+  .about .titulo h2 {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 37px;
+    padding-left: 0px;
+    padding-top: 20px;
+  }
 
+  .about .titulo p {
+    line-height: 22px;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+  }
 
+}
 /*--------------------------------------------------------------
 # Values Section
 --------------------------------------------------------------*/
@@ -1125,8 +1185,10 @@ section,
   padding: 30px;
   border-radius: 30px;
 }
-.stats .stats-item {background: url(../img/fondos/fondo\ sticker.jpg) center no-repeat;
-background-size: cover;
+
+.stats .stats-item {
+  background: url(../img/fondos/fondo\ sticker.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .stats .stats-item i {
@@ -1136,13 +1198,14 @@ background-size: cover;
   margin-right: 10px;
   margin-left: 1px;
 }
+
 .stats .stats-item span { background-color:#ffffff ;}
 
 .stats .stats-item span {
   color:#000000;
   font-size: 36px;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
 }
 .stats .stats-item span { background-color:#ffffff ;}
 
@@ -1182,6 +1245,23 @@ background-size: cover;
   margin-right: 15px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 640px) {
+
+.stats .section-title p {
+  margin: 10px 0 0 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 40px;
+ }
+
+.stats .stats-item {
+  background: url(../img/mobile/fondonumeros.jpg) center no-repeat;
+  background-size: cover;
+ }
+
+}
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -1341,56 +1421,6 @@ background-size: cover;
   background: #FE4504;
 }
 
-.services .service-item.item-red {
-  border-bottom: 3px solid #df1529;
-}
-
-.services .service-item.item-red .icon {
-  color: #df1529;
-  background: #ffffff;
-}
-
-.services .service-item.item-red .read-more {
-  color: #df1529;
-}
-
-.services .service-item.item-red:hover {
-  background: #df1529;
-}
-
-.services .service-item.item-indigo {
-  border-bottom: 3px solid #6610f2;
-}
-
-.services .service-item.item-indigo .icon {
-  color: #6610f2;
-  background: #ffffff;
-}
-
-.services .service-item.item-indigo .read-more {
-  color: #6610f2;
-}
-
-.services .service-item.item-indigo:hover {
-  background: #6610f2;
-}
-
-.services .service-item.item-pink {
-  border-bottom: 3px solid #f3268c;
-}
-
-.services .service-item.item-pink .icon {
-  color: #f3268c;
-  background: #ffffff;
-}
-
-.services .service-item.item-pink .read-more {
-  color: #f3268c;
-}
-
-.services .service-item.item-pink:hover {
-  background: #f3268c;
-}
 
 .services .service-item:hover h3,
 .services .service-item:hover p,
@@ -1422,6 +1452,27 @@ background-color: #ffffff;
   background-size: contain;
 }
 
+@media (max-width: 640px) {
+.section-title p {
+  margin: 10px 0 0 0;
+  font-size: 40px;
+  font-weight: 700;
+
+}
+
+.services {
+  background: url(../img/mobile/fondoenterate.jpg) left top no-repeat;
+  background-size: contain;
+}
+
+#estrellas {
+  background: url(../img/mobile/fondoestrllas.jpg) center no-repeat;
+  background-size: cover;
+  }
+
+}
+
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
@@ -1450,11 +1501,12 @@ background-color: #ffffff;
   font-weight: 800;
   font-size: 18px;
   margin-bottom: 15px;
+  color: #000000;
 }
 
 .pricing .price {
   font-size: 36px;
-  color: var(--heading-color);
+  color: #000000;
   font-weight: 800;
   font-family: var(--heading-font);
 }
@@ -1549,12 +1601,56 @@ background-color: #ffffff;
   background-size: contain;
   border-radius: 20px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 #destellos {background: url(../img/detalle/fondo\ ofertas.jpg) right top no-repeat;
   background-size: contain;
 }
 
+@media (max-width: 640px) {
+.pricing .section-title p {
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  font-size: 40px;
+}
+
+.pricing .pricing-tem {
+  box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
+  background-color: #ffffff;
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 100%;
+  background: url(../img/fondos/fondo\ cursos.jpg) center no-repeat;
+  background-size: cover;
+
+}
+
+.cursos {
+  width: 240px;
+  height: 140px;
+  background-size: cover;
+  border-radius: 20px;
+  padding-right: 45px;
+  padding left: 0px;
+  align-items: center;
+}
+
+#destellos {
+  background: url(../img/mobile/dosestrellitas.jpg) right top no-repeat;
+  background-size: cover;
+  }
+
+.pricing .section-title p {
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  font-size: 40px;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -1563,6 +1659,7 @@ background-color: #ffffff;
 .faq .faq-container .faq-item {
   position: relative;
   padding: 20px 0;
+  padding-bottom: 30px;
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   overflow: hidden;
 }
@@ -1637,8 +1734,9 @@ background-color: #ffffff;
 
 .faq  {
   background: url(../img/detalle/fondo\ preguntas.jpg) center no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
+
 
 
 
@@ -1775,6 +1873,28 @@ background-color: #ffffff;
   background: url(../img/fondos/fondo.jpg) center no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 640px) {
+  .portfolio .section-title p {
+    margin: 0 0 0 0;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .portfolio {
+   background-image: url("assets/img/mobile/fondoestrllas.jpg"); 
+   padding: 15px;
+   padding-top: 20px;
+   padding-bottom: 60px;
+  }
+  
+.portfolio {
+  background: url(../img/mobile/fondoportfolio.jpg) center no-repeat;
+  background-size: cover;
+}
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1879,7 +1999,7 @@ background-color: #ffffff;
 @media (min-width: 1200px) {
   .testimonials .swiper-slide-next {
     opacity: 1;
-    transform: scale(1.12);
+    transform: scale(1.12);}
  
 }
 
@@ -1890,13 +2010,33 @@ background-color: #ffffff;
 
 .testimonials {
   background: url(../img/fondos/fondo\ 2.jpg) right top no-repeat;
-  background-size: contain;
+  background-size: cover;
+  padding-bottom: 20px;
 }
 
 .estrellas {
   width: 20px;
   height: 20px;
 } 
+
+@media (max-width: 640px) {
+
+  .testimonials .section-title p {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+
+  .testimonials {
+    background: url(../img/mobile/fondoreseñas.jpg) right top no-repeat;
+    background-size: cover;
+  }
+
+  .testimonials .testimonial-item {
+    padding-top: 30px;
+  }
+
+}
+
 
 /*--------------------------------------------------------------
 # Team Section
@@ -1998,6 +2138,15 @@ background-color: #ffffff;
   font-weight: 700;
   font-family: var(--heading-font);
 }
+
+@media (max-width: 640px) {
+  .team .section-title p {
+    font-size: 40px;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
@@ -2089,6 +2238,13 @@ background-color: #ffffff;
   font-family: var(--heading-font);
 }
 
+@media (max-width: 640px) {
+.recent-posts .section-title p {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 40px;
+  }
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -2111,11 +2267,11 @@ background-color: #ffffff;
   font-weight: 700;
   margin: 20px 0 10px 0;
   color: #ffffff;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .contact .info-item p {
-  padding-left: 20px;
+  padding-left: 40px;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
@@ -2221,6 +2377,10 @@ background-color: #ffffff;
 .contact {
   background-color: #F0F1E1;
   background-size: cover;
+  padding-bottom: 70px;
+  background: url(../img/fondos/fondo\ 3.jpg) left top no-repeat;
+  background-size: cover;
+
 }
 
 .contact .section-title p {
@@ -2232,15 +2392,51 @@ background-color: #ffffff;
 }
 
 .contacto {
-  width: 70px;
-  height: 0px;
-}
-
-#charlemos {background: url(../img/detalle/fondo\ charlemos.jpg) center top no-repeat;
-  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin-left: 35px;
 }
 
 
+
+#charlemos {background: url(../img/mobile/fondocontactom.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .contact .section-title p {
+    font-size: 40px;
+    padding-left: 80px;
+  }
+
+  .contact {
+    background-color: #F0F1E1;
+    background-size: cover;
+    padding-bottom: 70px;
+    background: url(../img/mobile/fondocontacto.jpg) left top no-repeat;
+    background-size: cover;
+  
+  }
+
+  #charlemos {
+    background: url(../img/mobile/fondocharlemos.jpg) center top no-repeat;
+    background-size: cover;
+  }
+
+  .contact .info-item h3 {
+    padding-left: 80px;
+  }
+  
+  .contact .info-item p {
+    padding-left: 80px;
+  }
+
+  .contacto {
+ margin-left: 65px;
+  }
+
+
+}
 
 /*--------------------------------------------------------------
 # Blog Posts Section
